@@ -3,71 +3,67 @@ import navStyles from '@styles/Nav.module.css';
 
 const Nav = () => {
     return (
-        <nav className={navStyles.nav}>
-            <ul>
-        <li>
-                <Link href="/">
+        <div className={navStyles.navbar}>
+    <div className={navStyles.menu}>
+            <ul className={navStyles.menu}>
+                <li>
+                    <Link href="/">
 
                         Home
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                <Link href="/about">
+                    <Link href="/about">
 
                         About
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                <Link href="/featured">
+                    <Link href="/featured">
 
                         Featured
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                <Link href="/market">
+                    <Link href="/market">
 
                         Marketplace
-                </Link>
+                    </Link>
                 </li>
                 <li>
                     <Link href="/community">Community</Link>
                 </li>
                 <li>
-                <Link href="/stake">
+                    <Link href="/stake">
 
                         Stake
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                {/*here they vote on proposals, they get a share of the fees for participasting */}
-                <Link href="/vote">
+                    {/*here they vote on proposals, they get a share of the fees for participasting */}
+                    <Link href="/vote">
 
                         Vote
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                {/* where they go to make proposals such as delisting, adding new creators, etc, they get comissions for accepted proposals */}
-                <Link href="/propose">
+                    {/* where they go to make proposals such as delisting, adding new creators, etc, they get comissions for accepted proposals */}
+                    <Link href="/propose">
 
                         Propose
-                </Link>
+                    </Link>
                 </li>
                 <li>
-                <Link href="/launchpad">
+                    <Link href="/launchpad">
 
-                        Propose
-                </Link>
+Launchpad
+                    </Link>
                 </li>
-                <li>
-                <Link href="/create">
-
-                        Create
-                </Link>
-                </li>
-
             </ul>
+            </div>
 
-        </nav>
+
+        </div>
     );
 };
 

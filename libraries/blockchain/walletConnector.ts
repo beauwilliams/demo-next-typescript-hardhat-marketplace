@@ -1,15 +1,11 @@
-// require("dotenv").config();
-// import * as 'fs'
 import WalletConnectProvider from '@walletconnect/web3-provider'
 import WalletLink from 'walletlink'
 import Web3Modal from 'web3modal'
 
 //We use infura node, so this is our key
-const infura_id = process.env.NEXT_PUBLIC_ANALYTICS_ID;
-console.log(infura_id);
-export const INFURA_ID = '460f40a260564ac4a4f4b3fffb032dad'
+const INFURA_ID = process.env.NEXT_PUBLIC_INFURA_ID;
 
-export const providerOptions = {
+const providerOptions = {
   walletconnect: {
     package: WalletConnectProvider, // required
     options: {
@@ -20,7 +16,7 @@ export const providerOptions = {
     display: {
       logo: 'https://play-lh.googleusercontent.com/PjoJoG27miSglVBXoXrxBSLveV6e3EeBPpNY55aiUUBM9Q1RCETKCOqdOkX2ZydqVf0',
       name: 'Coinbase',
-      description: 'Connect to Coinbase Wallet',
+      description: 'Connect to Coinbase Wallet (not Coinbase App)',
     },
     options: {
       appName: 'Coinbase', // Your app name

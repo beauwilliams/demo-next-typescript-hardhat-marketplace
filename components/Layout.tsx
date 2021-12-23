@@ -1,7 +1,7 @@
-import Nav from './Nav';
-import Header from './Header';
-import HeadTag from './HeadTag';
-import Footer from './Footer';
+import Nav from '@components/Nav';
+import Header from '@components/Header';
+import HeadTag from '@components/HeadTag';
+import Footer from '@components/Footer';
 import styles from '@styles/Layout.module.css';
 
 const Layout = ({ children }) => {

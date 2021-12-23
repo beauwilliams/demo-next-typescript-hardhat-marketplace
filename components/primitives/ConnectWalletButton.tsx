@@ -2,19 +2,18 @@ import React from "react";
 
 function ConnectWalletButton(props) {
   return (
-    <div className="container">
-        <h1 className="title">Web3Modal Example</h1>
-        {props.web3Provider ? (
-          <button className="button" type="button" onClick={props.disconnect}>
-            Disconnect
-          </button>
-        ) : (
-          <button className="button" type="button" onClick={props.connect}>
-            Connect
-          </button>
-        )}
+    <>
+      {props.web3Provider ? (
+        <button className="button" type="button" onClick={props.disconnect}>
+          Disconnect
+        </button>
+      ) : (
+        <button className="button" type="button" onClick={props.connect}>
+          Connect
+        </button>
+      )}
 
-          <style jsx>{`
+      <style jsx>{`
         main {
           padding: 5rem 0;
           text-align: center;
@@ -47,8 +46,7 @@ function ConnectWalletButton(props) {
           margin-bottom: 0.25rem;
         }
       `}</style>
-
-    </div>
+    </>
   );
 }
 
