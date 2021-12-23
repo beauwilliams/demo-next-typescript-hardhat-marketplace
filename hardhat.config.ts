@@ -9,38 +9,40 @@ import "hardhat-gas-reporter";
 import "solidity-coverage";
 
 dotenv.config();
+const privateKey = process.env.PRIVATE_KEY;
 
+// NOTE: Demo task function
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
-task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
+/* task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
   for (const account of accounts) {
     console.log(account.address);
   }
-});
+}); */
 
 
-const fs = require('fs');
-const privateKey = process.env.PRIVATE_KEY;
 
 
-// It is best to use priv key, but in case dev wishes to use mnemonics
-function mnemonic() {
+// NOTE: It is best to use priv key, but in case dev wishes to use mnemonics
+// const fs = require('fs');
+/* function mnemonic() {
   try {
     return fs.readFileSync("./mnemonic.txt").toString().trim();
   } catch (e) {
       console.log("failed to read mnemonic");
   }
   return "";
-}
+} */
 
-const DEBUG = false;
+//NOTE: Debugger
+/* const DEBUG = false;
 function debug(text: String) {
   if (DEBUG) {
     console.log(text);
   }
-}
+} */
 
 
 // You need to export an object to set up your config
@@ -85,7 +87,7 @@ const config: HardhatUserConfig = {
     ropsten: {
       url: process.env.ROPSTEN_URL || "",
       accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        privateKey !== undefined ? [privateKey] : [],
     },
   },
 };
