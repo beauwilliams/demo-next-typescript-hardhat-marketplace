@@ -29,7 +29,7 @@ Tech stack:
 
 1. run `start`
 
-*or ./start.sh if you chose not to set up this projects aliases`
+*or ./start.sh if you chose not to set up this projects aliases*
 
 *you can now visit localhost:3000 in your browser!*
 
@@ -37,7 +37,7 @@ Tech stack:
 
 1. run `stop`
 
-*or ./stop.sh if you chose not to set up this projects aliases`
+*or ./stop.sh if you chose not to set up this projects aliases*
 
 # Preview
 
