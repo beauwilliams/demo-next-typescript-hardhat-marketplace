@@ -10,8 +10,13 @@ Goals:
 - Extensible. Code in this project is useful in many dapps or as providing inspiration
 
 Tech stack:
+*code*
 - Typescript (default JS, typed where possible. Aiming for fully typed code)
+*content frameworks*
 - NextJs (React fairy dust. More is more. NextJs makes make aspects of react development a lot easier)
+*styles*
+- Tailwind CSS + PostCSS (Tailwind supplies CSS, postCSS is the preprocessor)
+*ethereum dev tools*
 - Hardhat (Based smart contracts dev suite)
 - Ethers (Because it's the standard library to interact with blockchain and is a well trodden library many developers have already navigated)
 - Web3Modal (It's nice yeah.. I'm not happy with the wallet integration code yet. It's a mess **WIP**)
@@ -30,8 +35,6 @@ Tech stack:
 1. run `start`
 
 *or ./start.sh if you chose not to set up this projects aliases*
-
-*you can now visit localhost:3000 in your browser!*
 
 # Stopping the servers
 
