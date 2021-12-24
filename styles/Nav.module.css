@@ -11,15 +11,15 @@
   /* background: #4776e6;
   background: -webkit-linear-gradient(to right, #8e54e9, #4776e6);
   background: linear-gradient(to right, #8e54e9, #4776e6); */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .navbar{
   width: 100%;
   height: 100px;
-  /* display: flex; */
+  display: flex;
   background-color: #1f1d1d;
 }
 
@@ -37,16 +37,16 @@
 
 .menu li {
   height: 100%;
-  font-size: 20px;
+  font-size: 10px;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   color: #e3e3e3;
   text-transform: uppercase;
   /* text-shadow: 0 0 15px #8e54e9; */
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-align: left;
+  text-align: center;
   padding: 0 10px;
   margin-right: 30px;
 }
@@ -57,104 +57,4 @@
   /* background-color: #ddd; */
   color: #e86c00;
   /* height: 80%; */
-}
-
-
-
-
-.nav {
-  height: 50px;
-  padding: 10px;
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-
-.nav ul li a {
-  margin: 5px 15px;
-}
-
-/* Add a black background color to the  navigation */
-/* .nav {
-    background-color: #333;
-    overflow: hidden;
-} */
-
-/* Fonts */
-.nav {
-    color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-
-}
-
-/* Style the links inside the navigation bar */
-.navleft a {
-  float: left;
-}
-
-/* Change the color of links on hover */
-.nav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.nav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Right-aligned section inside the  navigation */
-.navright {
-  float: right;
-}
-
-/* * Before Hover: Width of before element is set to 100% and height to 0 and Width of before element is*/
-/* set to 0% and height to 100%  */
-/* On Hover:  Top and bottom borders' of after element and left and right borders of before element*/
-/* is animated here by increasing the height of before element from 0 to 80% and width of after */
-/* element from 0 to 120% */
-
-.nav li:after,
-.nav li:before {
-  content: "";
-  position: absolute;
-  display: block;
-  border: 0px solid transparent;
-}
-
-.nav li:after {
-  width: 0%;
-  height: 80%;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transition: all 0.3s ease;
-}
-
-.nav li:before {
-  width: 120%;
-  height: 0%;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transition: all 0.5s ease;
-}
-
-.nav li:hover::before {
-  height: 80%;
-}
-
-.nav li:hover::after {
-  width: 120%;
 }

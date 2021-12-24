@@ -1,3 +1,4 @@
+import ConnectWallet from '@components/ConnectWallet';
 import Link from 'next/link';
 import navStyles from '@styles/Nav.module.css';
 
@@ -59,6 +60,10 @@ const Nav = () => {
 Launchpad
                     </Link>
                 </li>
+            <li>
+                                        <ConnectWallet></ConnectWallet>
+
+                    </li>
             </ul>
             </div>
 

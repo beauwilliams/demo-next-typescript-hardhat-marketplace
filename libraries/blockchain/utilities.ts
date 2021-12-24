@@ -1,6 +1,20 @@
 import supportedChains from '@libraries/blockchain/chains'
 import { IChainData } from '@libraries/blockchain/types'
 
+// USAGE:   const chainData = getChainData(chainId)
+//         {address && (
+          /* <div className="grid">
+            <div>
+              <p className="mb-1">Network:</p>
+              <p>{chainData?.name}</p>
+            </div>
+            <div>
+              <p className="mb-1">Address:</p>
+              <p>{ellipseAddress(address)}</p>
+            </div>
+          </div>
+        )}
+ */
 export function getChainData(chainId?: number): IChainData {
   if (!chainId) {
     return null
@@ -24,13 +38,21 @@ export function getChainData(chainId?: number): IChainData {
 
     return {
       ...chainData,
-      rpc_url: rpcUrl,
+
     }
   }
 
   return chainData
 }
 
+
+
+/* USAGE:
+              <div>
+              <p className="mb-1">Address:</p>
+              <p>{ellipseAddress(address)}</p>
+            </div>
+ */
 export function ellipseAddress(address = '', width = 10): string {
   if (!address) {
     return ''

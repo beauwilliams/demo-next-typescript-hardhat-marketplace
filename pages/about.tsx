@@ -1,13 +1,7 @@
-import ConnectWallet from '@components/ConnectWallet';
-
-
-const INFURA_ID = '460f40a260564ac4a4f4b3fffb032dad'
-
-
-export const Home = (): JSX.Element => {
+export const About = (): JSX.Element => {
   return (
-  <ConnectWallet></ConnectWallet>
+  <h1>Hello about people</h1>
   )
 }
 
-export default Home
+export default About
