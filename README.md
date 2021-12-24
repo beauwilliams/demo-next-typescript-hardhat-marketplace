@@ -3,8 +3,8 @@
 ### Goals:
 - Concise code
 - Well typed
-- Using react hooks + functional features
-- easy to understand and use libraries
+- Modern react code using hooks + functional features
+- Code can be easily refactored
 - Easy for other developers to contribute and leverage the code
 - Fast. Server side rendering as much as possible
 - Extensible. Code in this project is useful in many dapps or as providing inspiration
