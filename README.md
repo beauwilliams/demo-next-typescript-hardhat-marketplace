@@ -1,6 +1,6 @@
 # Demo NFT Marketplace
 
-Goals:
+## Goals:
 - Concise code
 - Well typed
 - Using react hooks + functional features
@@ -9,13 +9,16 @@ Goals:
 - Fast. Server side rendering as much as possible
 - Extensible. Code in this project is useful in many dapps or as providing inspiration
 
-Tech stack:
+## Tech stack:
+
 *code*
 - Typescript (default JS, typed where possible. Aiming for fully typed code)
 *content frameworks*
 - NextJs (React fairy dust. More is more. NextJs makes make aspects of react development a lot easier)
+
 *styles*
 - Tailwind CSS + PostCSS (Tailwind supplies CSS, postCSS is the preprocessor)
+
 *ethereum dev tools*
 - Hardhat (Based smart contracts dev suite)
 - Ethers (Because it's the standard library to interact with blockchain and is a well trodden library many developers have already navigated)
@@ -30,13 +33,13 @@ Tech stack:
 
 2. run `source DEVS-RUN-ME-FIRST.sh`
 
-# Starting the servers
+## Starting the servers
 
 1. run `start`
 
 *or ./start.sh if you chose not to set up this projects aliases*
 
-# Stopping the servers
+## Stopping the servers
 
 1. run `stop`
 
