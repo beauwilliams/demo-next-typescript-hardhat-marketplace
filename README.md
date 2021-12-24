@@ -38,3 +38,7 @@ Tech stack:
 1. run `stop`
 
 *or ./stop.sh if you chose not to set up this projects aliases`
+
+# Preview
+
+![nft_market_preview](https://i.ibb.co/y4hnL8Q/Screen-Shot-2021-12-24-at-2-38-52-pm.png)
