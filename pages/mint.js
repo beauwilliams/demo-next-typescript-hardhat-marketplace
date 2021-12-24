@@ -83,7 +83,7 @@ export default function CreateItem() {
 
   return (
     <div className="flex justify-center">
-      <div className="w-1/2 flex flex-col pb-12">
+      <div className="w-full flex flex-col pb-12">
         <input
           placeholder="Asset Name"
           className="mt-8 border rounded p-4"
@@ -110,7 +110,7 @@ export default function CreateItem() {
             <img className="rounded mt-4" width="350" src={fileUrl} />
           )
         }
-        <button onClick={createMarket} className="font-bold mt-4 bg-pink-500 text-white rounded p-4 shadow-lg">
+        <button onClick={createMarket} className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
           Create Digital Asset
         </button>
       </div>

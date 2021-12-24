@@ -41,7 +41,7 @@ function Home() {
               <div className="p-4 bg-black">
                 <p className="text-2xl mb-4 font-bold text-white">{nft.price} ETH</p>
                 <button
-                  className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded"
+                  className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                   onClick={() => buyNft(nft)}
                 >
                   Buy
