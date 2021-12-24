@@ -12,7 +12,7 @@
 ### Tech stack:
 
 *code*
-- Typescript (default JS [any type / untyped], typed where possible. Aiming for fully typed code)
+- Typescript (default is JS [any type / untyped], typed where possible. Aiming for fully typed code a.k.a proper Typescript code)
 *content frameworks*
 - NextJs (React fairy dust. More is more. NextJs makes make aspects of react development a lot easier)
 
