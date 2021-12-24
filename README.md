@@ -32,4 +32,5 @@ Tech stack:
 # Stopping the servers
 
 1. run `stop`
+
 *or ./stop.sh if you chose not to set up this projects aliases`
