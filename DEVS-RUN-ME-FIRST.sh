@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+echo "Installing deps"
+sleep 2
+npm install --production=false
+
+
+echo "Setting up dev automation scripts"
+sleep 2
 chmod +x ./stop.sh
 chmod +x ./start.sh
 
