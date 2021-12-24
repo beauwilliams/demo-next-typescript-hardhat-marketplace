@@ -17,3 +17,5 @@ if [[ $REPLY =~ ^[Nn]$ ]]; then
 alias stop='./stop.sh'
 alias start="./start.sh"
 fi
+
+./start.sh
