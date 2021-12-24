@@ -32,6 +32,12 @@ const Nav = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link href="/mint">
+
+                        Mint NFTs
+                    </Link>
+                </li>
+                <li>
                     <Link href="/community">Community</Link>
                 </li>
                 <li>

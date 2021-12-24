@@ -19,13 +19,17 @@ Tech stack:
 
 # DEVS START HERE
 
-*the 3 steps to success*
+*the 2 steps to success*
 
 1. install `tmux` on your local machine if not installed already
 
-2. run `chmod +x ./DEVS-RUN-ME-FIRST.sh && ./DEVS-RUN-ME-FIRST.sh`
+2. run `source DEVS-RUN-ME-FIRST.sh`
 
-3. run `start` to start the dev servers and compile contracts
+# Starting the servers
+
+1. run `start`
+
+*or ./start.sh if you chose not to set up this projects aliases`
 
 *you can now visit localhost:3000 in your browser!*
 
