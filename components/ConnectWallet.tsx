@@ -2,18 +2,16 @@ import { providers, ethers } from 'ethers'
 import Head from 'next/head'
 import { useCallback, useEffect, useReducer } from 'react'
 import ConnectWalletButton from '@components/primitives/ConnectWalletButton';
-import { ellipseAddress, getChainData } from '@libraries/blockchain/utilities'
 import { web3Modal, initialState, reducer } from '@libraries/blockchain/walletConnector'
-import WalletConnectProvider from '@walletconnect/web3-provider'
-import WalletLink from 'walletlink'
-import Web3Modal from 'web3modal'
 import { signMessage } from '@libraries/blockchain/signatures'
 
 
 
 export const ConnectWallet = (): JSX.Element => {
   const [state, dispatch] = useReducer(reducer, initialState)
-  const { provider, web3Provider, address, chainId } = state
+  const { provider, web3Provider } = state
+
+
 
   const connect = useCallback(async function() {
     // This is the initial `provider` that is returned when
@@ -30,12 +28,14 @@ export const ConnectWallet = (): JSX.Element => {
 
     const network = await web3Provider.getNetwork()
 
+    console.log(network.chainId);
+
     dispatch({
       type: 'SET_WEB3_PROVIDER',
       provider,
       web3Provider,
       address,
-      chainId: network.chainId,
+      // chainId: network.chainId,
     })
   }, [])
 

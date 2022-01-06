@@ -5,77 +5,45 @@ import navStyles from '@styles/Nav.module.css';
 const Nav = () => {
     return (
         <div className={navStyles.navbar}>
-    <div className={navStyles.menu}>
             <ul className={navStyles.menu}>
                 <li>
-                    <Link href="/">
-
-                        Home
-                    </Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about">
-
-                        About
-                    </Link>
+                    <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <Link href="/featured">
-
-                        Featured
-                    </Link>
+                    <Link href="/featured">Featured</Link>
                 </li>
                 <li>
-                    <Link href="/market">
-
-                        Marketplace
-                    </Link>
+                    <Link href="/market">Marketplace</Link>
                 </li>
                 <li>
-                    <Link href="/mint">
-
-                        Mint NFTs
-                    </Link>
+                    <Link href="/mint">Mint NFTs</Link>
                 </li>
                 <li>
                     <Link href="/community">Community</Link>
                 </li>
                 <li>
-                    <Link href="/stake">
-
-                        Stake
-                    </Link>
+                    <Link href="/stake">Stake</Link>
                 </li>
                 <li>
                     {/*here they vote on proposals, they get a share of the fees for participasting */}
-                    <Link href="/vote">
-
-                        Vote
-                    </Link>
+                    <Link href="/vote">Vote</Link>
                 </li>
                 <li>
                     {/* where they go to make proposals such as delisting, adding new creators, etc, they get comissions for accepted proposals */}
-                    <Link href="/propose">
-
-                        Propose
-                    </Link>
+                    <Link href="/propose">Propose</Link>
                 </li>
                 <li>
-                    <Link href="/launchpad">
-
-Launchpad
-                    </Link>
+                    <Link href="/launchpad">Launchpad</Link>
                 </li>
-            <li>
-                                        <ConnectWallet></ConnectWallet>
-
-                    </li>
             </ul>
-            </div>
-
-
+            <ul className="flex items-center mr-8">
+                <ConnectWallet></ConnectWallet>
+            </ul>
         </div>
     );
 };
 
-export default Nav
+export default Nav;

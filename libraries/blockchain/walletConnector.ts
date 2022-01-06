@@ -21,7 +21,7 @@ const providerOptions = {
     options: {
       appName: 'Coinbase', // Your app name
       networkUrl: `https://mainnet.infura.io/v3/${INFURA_ID}`,
-      chainId: 1,
+      // chainId: 1,
     },
     package: WalletLink,
     connector: async (_, options) => {
@@ -75,8 +75,8 @@ export type ActionType =
 export const initialState: StateType = {
   provider: null,
   web3Provider: null,
-  address: null,
-  chainId: null,
+  address: undefined,
+  chainId: 1,
 }
 
 export function reducer(state: StateType, action: ActionType): StateType {

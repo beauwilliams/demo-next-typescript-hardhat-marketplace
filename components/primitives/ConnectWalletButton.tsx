@@ -14,23 +14,6 @@ function ConnectWalletButton(props) {
       )}
 
       <style jsx>{`
-        main {
-          padding: 5rem 0;
-          text-align: center;
-        }
-        p {
-          margin-top: 0;
-        }
-        .container {
-          padding: 2rem;
-          margin: 0 auto;
-          max-width: 1200px;
-        }
-        .grid {
-          display: grid;
-          grid-template-columns: auto auto;
-          justify-content: space-between;
-        }
         .button {
           padding: 1rem 1.5rem;
           background: ${props.web3Provider ? 'red' : 'green'};
@@ -38,12 +21,6 @@ function ConnectWalletButton(props) {
           border-radius: 0.5rem;
           color: #fff;
           font-size: 1.2rem;
-        }
-        .mb-0 {
-          margin-bottom: 0;
-        }
-        .mb-1 {
-          margin-bottom: 0.25rem;
         }
       `}</style>
     </>
